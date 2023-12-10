@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary to Hex and Pascal's Triangle</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 30px;
+    }
+
+    textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-label {
+      font-weight: 50;
+    }
+
+    #pascalsTriangle {
+      margin-top: 20px;
+      white-space: pre;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="h3">2진수 변환기</div>
+    <div class="mb-3">
+      <label class="form-label text-primary">2 진수 :
+        <input type="text" id="binaryInput" size="20">
+      </label>
+      <button type="button" class="btn btn-dark" onclick="convertBinaryToHex()">
+        <span class="button-label">= = = ></span>
+      </button>
+      <label class="form-label text-primary">16 진수
+        <input type="text" id="hexanum" size="20" readonly>
+      </label>
+    </div>
+    <hr>
+    <div class="h3">파스칼 삼각형</div>
+    <div class="mb-3">
+      <label class="form-label text-primary">삼각형 높이
+        <input type="number" id="triangleHeight" min="1" max="20" step="1" value="1">
+      </label>
+      <button type="button" class="btn btn-success" onclick="drawPascals()">그리기</button>
+    </div>
+    <div class="text-bg-secondary" id="pascalsTriangle"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    // Your JavaScript functions here
+  </script>
+</body>
+
+</html>
